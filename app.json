@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1d5f3de1-9f72-4e06-9d55-cfc6ffd8a47b"
+      }
+    },
+    "owner": "ryandotfurrer"
   }
 }

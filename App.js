@@ -28,7 +28,7 @@ const App= () => {
           },
           styles.wrapperCustom,
         ]}>
-        <Text style={styles.buttonText}>-1</Text>
+        <Text style={styles.buttonText}>-</Text>
       </Pressable>
     <View style={styles.container2}>
       <Text style={styles.count}>{count}</Text>
@@ -46,15 +46,16 @@ const App= () => {
           },
           styles.wrapperCustom,
         ]}>
-        <Text style={styles.buttonText}>+1</Text>
+        <Text style={styles.buttonText}>+</Text>
       </Pressable>
+      <StatusBar style='dark' />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    padding: 16,
+    paddingInline: 54,
     flex: 1,
     backgroundColor: 'rgba(0,0,0,1)',
     alignItems: 'center',
@@ -76,7 +77,8 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.95)',
   },
   count: {
-    fontSize: 48,
+    fontSize: 96,
+    fontWeight: 'bold',
     color: 'rgba(255,255,255,0.95)',
   },
   wrapperCustom: {
@@ -84,7 +86,9 @@ const styles = StyleSheet.create({
     padding: 6,
   },
   buttonText: {
-    fontSize: 48,}
+    fontSize: 96,
+    fontWeight: 'bold',
+  }
 });
 
 export default App;
